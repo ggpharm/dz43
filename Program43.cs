@@ -25,12 +25,14 @@ Console.WriteLine(" ");
 Console.WriteLine($"Введено: {k1} {b1} {k2} {b2}");
 
 double x = 0;
-double y;
+double y = 0;
 if (k1 == k2)
     Console.WriteLine("Линии не пересекаются");
     else 
+    {
     x = (b2 - b1) / (k1 - k2);
     y = k1 * x + b1;
-
+    }
     
 Console.Write($"Точка пересечения двух прямых: {x},{y}");
+Console.WriteLine(" ");
